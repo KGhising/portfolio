@@ -1,0 +1,26 @@
+@import 'Theme';
+@import 'Topbar';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Constantia;
+}
+.App {
+    .sort-info {
+        font-size: 1.4rem;
+        color: map-get($map: $theme-colors, $key: 'secondary');
+        text-align: center;
+
+        .underline {
+            margin: 0.5rem auto;
+            width: 20rem;
+            height: 0.1rem;
+            background-color: map-get($map: $theme-colors, $key: 'secondary');
+        }
+    }
+}

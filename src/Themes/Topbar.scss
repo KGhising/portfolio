@@ -1,0 +1,44 @@
+.top-navbar {
+    height: 80px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal-logo {
+    display: flex;
+    align-items: center;
+
+
+    .logo {
+        height: 3rem;
+    }
+
+    .title-name {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-left: 0.5rem;
+        color: map-get($map: $theme-colors, $key: 'secondary');;
+    }
+}
+
+.download-cv {
+    display: flex;
+    align-items: center;
+
+    label {
+        color: map-get($map: $theme-colors, $key: 'primary');
+        font-size: 1.2rem;
+    }
+    
+    .donwnload-icon {
+        margin-left: 0.5rem;
+    }
+
+    :hover {
+        cursor: pointer;
+        color: map-get($map: $theme-colors, $key: 'blue');
+    }
+}
