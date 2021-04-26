@@ -1,5 +1,6 @@
 @import 'Theme';
 @import 'Topbar';
+@import 'NavLink';
 
 * {
     margin: 0;
@@ -11,6 +12,15 @@ body {
     font-family: Constantia;
 }
 .App {
+    .main-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .side-navbar {
+        position: absolute;
+        top: 50%;
+    }
     .sort-info {
         font-size: 1.4rem;
         color: map-get($map: $theme-colors, $key: 'secondary');

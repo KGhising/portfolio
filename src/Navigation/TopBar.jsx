@@ -5,7 +5,7 @@ import downloadIcon from '../svg/downloadIcon.svg';
 class TopBar extends React.Component {
     render() {
         return (
-            <nav className="top-navbar">
+            <header className="top-navbar">
                 <div className="personal-logo">
                     <img className="logo" src={logo} alt="Kishor Ghising Logo" />
                     <label className="title-name">Kishor Ghising</label>
@@ -14,7 +14,7 @@ class TopBar extends React.Component {
                     <label>Download</label>
                     <img className="donwnload-icon" src={downloadIcon} alt="Download icon" />
                 </div>
-            </nav>
+            </header>
         );
     }
 } 

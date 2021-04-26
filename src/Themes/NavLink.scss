@@ -1,0 +1,19 @@
+.nav-item {
+    list-style: none;
+    
+    .nav-link{
+        text-decoration: none;
+        color: map-get($map: $theme-colors, $key: 'secondary');
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    :hover {
+        color: map-get($map: $theme-colors, $key: 'primary');
+    }
+}
+
+.nav-item.active {
+    .nav-link{
+        color: map-get($map: $theme-colors, $key: 'primary');
+    }  
+}
