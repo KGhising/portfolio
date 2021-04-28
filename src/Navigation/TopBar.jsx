@@ -8,11 +8,11 @@ class TopBar extends React.Component {
             <header className="top-navbar">
                 <div className="personal-logo">
                     <img className="logo" src={logo} alt="Kishor Ghising Logo" />
-                    <label className="title-name">Kishor Ghising</label>
+                    <label htmlFor="logo" className="title-name">Kishor Ghising</label>
                 </div>
                 <div className="download-cv">
-                    <label>Download</label>
-                    <img className="donwnload-icon" src={downloadIcon} alt="Download icon" />
+                    <label htmlFor="download-icon" >Download</label>
+                    <img className="donwnload-icon" src={downloadIcon} alt="Kishor Ghising Resume Download icon" />
                 </div>
             </header>
         );
