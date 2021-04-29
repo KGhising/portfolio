@@ -41,7 +41,7 @@ class App extends React.Component {
               <p>Hi, I'm a UI/UX designer<br />based on Kathmandu, Nepal.</p>
               <div className="underline"></div>
             </div>
-            <main className="sidebar">
+            <main className="main-container">
               <Switch>
                 <Route exact path={PROJECT_URL}>
                   <Project></Project>

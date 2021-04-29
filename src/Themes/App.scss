@@ -1,6 +1,8 @@
 @import 'Theme';
 @import 'Topbar';
 @import 'NavLink';
+@import 'ThumbnailCard';
+@import 'Project';
 
 * {
     margin: 0;
@@ -45,6 +47,11 @@ body {
                 height: 0.1rem;
                 background-color: map-get($map: $theme-colors, $key: 'secondary');
             }
+        }
+
+        .main-container {
+            margin-left: 8rem;
+            margin-top: 3rem;
         }
     }
 }
