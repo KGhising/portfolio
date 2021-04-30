@@ -16,6 +16,9 @@ class Project extends React.Component {
           <ThumbnailCard projectTitle="This is title" projectField="UX" />
           <ThumbnailCard projectTitle="This is title" projectField="UX" />
           <ThumbnailCard projectTitle="This is title" projectField="UX" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" />
         </div>
       </div>
     );

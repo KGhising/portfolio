@@ -1,0 +1,12 @@
+.bottom-bar {
+    height: 4rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: map-get($map: $theme-colors, $key: 'secondary');
+    }
+}

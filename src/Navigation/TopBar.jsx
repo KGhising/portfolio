@@ -11,7 +11,7 @@ class TopBar extends React.Component {
                     <label htmlFor="logo" className="title-name">Kishor Ghising</label>
                 </div>
                 <div className="download-cv">
-                    <label htmlFor="download-icon" >Download</label>
+                    <label htmlFor="download-icon" >Resume</label>
                     <img className="donwnload-icon" src={downloadIcon} alt="Kishor Ghising Resume Download icon" />
                 </div>
             </header>

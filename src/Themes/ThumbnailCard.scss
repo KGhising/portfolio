@@ -1,7 +1,7 @@
 .thumbnail-card {
     width: 100%;
     height: 12rem;
-    border: 1px map-get($map: $theme-colors, $key: 'secondary') solid;
+    background-color: map-get($map: $theme-colors, $key: 'blue');
     display: flex;
     align-items: flex-end;
 

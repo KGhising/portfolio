@@ -1,5 +1,5 @@
 .top-navbar {
-    height: 80px;
+    height: 4rem;
     width: 90%;
     margin: auto;
     display: flex;
@@ -13,11 +13,11 @@
 
 
     .logo {
-        height: 3rem;
+        height: 2.5rem;
     }
 
     .title-name {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         font-weight: 700;
         margin-left: 0.5rem;
         color: map-get($map: $theme-colors, $key: 'secondary');;

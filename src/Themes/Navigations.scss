@@ -1,0 +1,10 @@
+.navbar {
+    height: 2.5rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.navbar > * {
+    margin-right: 1rem;
+}
