@@ -8,6 +8,7 @@ import {
   ABOUT_URL,
   CONTACT_URL,
   RESUME_URL,
+  PROJECT_DETAILS_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
@@ -15,6 +16,7 @@ import Project from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Resume from './Pages/Resume';
+import ProjectDetails from './Pages/ProjectDetails';
 
 class App extends React.Component {
   render() {
@@ -32,9 +34,6 @@ class App extends React.Component {
           </div>
 
           <section className="main-section">
-            <div className="sort-info">
-              <p>Hi, I'm a UI/UX designer<br />based on Kathmandu, Nepal.</p>
-            </div>
             <main className="main-container">
               <Switch>
                 <Route exact path={PROJECT_URL}>
@@ -46,9 +45,11 @@ class App extends React.Component {
                 <Route exact path={CONTACT_URL}>
                   <Contact></Contact>
                 </Route>
-
                 <Route exact path={RESUME_URL}>
                   <Resume></Resume>
+                </Route>
+                <Route exact path={PROJECT_DETAILS_URL}>
+                  <ProjectDetails></ProjectDetails>
                 </Route>
               </Switch>
             </main>

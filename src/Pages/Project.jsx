@@ -8,19 +8,22 @@ import ThumbnailCard from '../Components/ThumbnailCard';
 class Project extends React.Component {
   render() {
     return (
-      <div className='project'>
-        <div className="grid-container">
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" />
+      <section className='projects' >
+        <div className="sort-info">
+          <p>Hi, I'm a UI/UX designer<br />based on Kathmandu, Nepal.</p>
         </div>
-      </div>
+        <div className="grid-container">
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+        </div>
+      </section>
     );
   }
 }

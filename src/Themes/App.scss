@@ -31,12 +31,6 @@ body {
         margin: auto;
         margin-top: 2rem;
 
-        .sort-info {
-            font-size: 1.4rem;
-            color: map-get($map: $theme-colors, $key: 'black');
-            text-align: center;
-        }
-
         .main-container {
             margin-top: 2rem;
         }
