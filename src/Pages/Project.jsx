@@ -13,15 +13,7 @@ class Project extends React.Component {
           <p>Hi, I'm a UI/UX designer<br />based on Kathmandu, Nepal.</p>
         </div>
         <div className="grid-container">
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
-          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="projectName" />
+          <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="project-name" />
         </div>
       </section>
     );
