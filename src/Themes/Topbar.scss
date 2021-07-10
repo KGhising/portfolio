@@ -10,35 +10,33 @@
 .personal-logo {
     display: flex;
     align-items: center;
-
+    column-gap: 0.5rem;
 
     .logo {
         height: 2.5rem;
     }
 
     .title-name {
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-left: 0.5rem;
-        color: map-get($map: $theme-colors, $key: 'secondary');;
+        color: map-get($map: $theme-colors, $key: 'secondary');
     }
 }
 
 .download-cv {
     display: flex;
+    column-gap: 0.5rem;
     align-items: center;
 
-    label {
+    label, .icon {
         color: map-get($map: $theme-colors, $key: 'primary');
-        font-size: 1.2rem;
-    }
-    
-    .donwnload-icon {
-        margin-left: 0.5rem;
     }
 
-    :hover {
-        cursor: pointer;
-        color: map-get($map: $theme-colors, $key: 'blue');
+    &:hover {
+        label, .icon {
+            cursor: pointer;
+            color: map-get($map: $theme-colors, $key: 'blue');
+        }
+        .icon {
+            margin-top: 0.25rem;
+        }
     }
 }

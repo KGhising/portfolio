@@ -23,16 +23,12 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <div className="top-navbar-container">
+          <header className="top-navbar-container">
             <Topbar />
-            <div className="navbar-container">
+            <nav className="navbar-container">
               <Navigations />
-            </div>
-          </div>
-          <div className="bottom-bar-container">
-            <BottomBar />
-          </div>
-
+            </nav>
+          </header>
           <section className="main-section">
             <main className="main-container">
               <Switch>
@@ -54,6 +50,9 @@ class App extends React.Component {
               </Switch>
             </main>
           </section>
+          <footer className="bottom-bar-container">
+            <BottomBar />
+          </footer>
         </div>
       </BrowserRouter>
     );

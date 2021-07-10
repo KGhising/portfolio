@@ -1,11 +1,15 @@
 @import 'Theme';
+@import 'TypeStyle';
 @import 'Topbar';
 @import 'NavLink';
 @import 'Navigations';
 @import 'BottomBar';
 @import 'SocialLink';
 @import 'ThumbnailCard';
+@import 'Form';
+@import 'Button';
 @import 'Project';
+@import 'Contact';
 
 * {
     margin: 0;
@@ -15,6 +19,7 @@
 
 body {
     font-family: Constantia;
+    font-size: 16px;
 }
 .App {
     .navbar-container, .bottom-bar-container {

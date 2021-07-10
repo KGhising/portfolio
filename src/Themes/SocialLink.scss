@@ -1,12 +1,12 @@
 .social-media-links {
     display: flex;
+    column-gap: 16px;
 }
 
 .social-media-links > * {
-    margin-left: 1rem;
     color: map-get($map: $theme-colors, $key: 'secondary');
 
-    :hover {
-        color: map-get($map: $theme-colors, $key: 'primary');
+    &:hover {
+        color: map-get($map: $theme-colors, $key: 'blue');
     }
 }
