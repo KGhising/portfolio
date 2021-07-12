@@ -1,0 +1,55 @@
+.about {
+    padding-bottom: 7rem;
+    .art-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .circle-name-container {
+            position: absolute;
+            margin-left: -5rem;
+            margin-top: 2rem;
+            z-index: -99;
+
+            width: 22rem;
+            height: 22rem;
+            border-radius: 50%;
+            background-color: map-get($map: $theme-colors, $key: 'green');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .kishor {
+                margin-left: -28rem;
+                margin-top: -3rem;
+                color: map-get($map: $theme-colors, $key: 'blue');
+            }
+        }
+        .rectangle {
+            position: absolute;
+            height: 4rem;
+            width: 28rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 24rem;
+            margin-left: 30rem;
+            background-color: map-get($map: $theme-colors, $key: 'orange');
+            
+            .ghising {
+                margin-top: -4rem;
+                color: map-get($map: $theme-colors, $key: 'blue');
+            }
+        }
+    }
+
+    .content-container {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+
+        .content > * {
+            margin-top: 1.5rem;
+        }
+    }
+}
