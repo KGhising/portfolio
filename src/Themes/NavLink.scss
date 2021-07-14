@@ -1,15 +1,20 @@
 .nav-item {
     list-style: none;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     
     .nav-link{
         text-decoration: none;
         color: map-get($map: $theme-colors, $key: 'secondary');
         font-size: 1.2rem;
         font-weight: 500;
-    }
-    :hover {
-        color: map-get($map: $theme-colors, $key: 'primary');
+
+        &:hover {
+            color: map-get($map: $theme-colors, $key: 'primary');
+        }
+        &:focus {
+            outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+            outline-offset: 0.5rem;
+        }
     }
 }
 

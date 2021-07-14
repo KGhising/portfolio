@@ -25,6 +25,7 @@
     display: flex;
     column-gap: 0.5rem;
     align-items: center;
+    text-decoration: none;
 
     label, .icon {
         color: map-get($map: $theme-colors, $key: 'primary');
@@ -38,5 +39,9 @@
         .icon {
             margin-top: 0.25rem;
         }
+    }
+    &:focus {
+        outline:2px dashed map-get($map: $theme-colors, $key: 'black');
+        outline-offset: 0.5rem;
     }
 }
