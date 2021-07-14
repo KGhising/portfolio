@@ -9,4 +9,9 @@
     &:hover {
         color: map-get($map: $theme-colors, $key: 'blue');
     }
+
+    &:focus {
+        outline:2px dashed map-get($map: $theme-colors, $key: 'black');
+        outline-offset: 0.25rem;
+    }
 }
