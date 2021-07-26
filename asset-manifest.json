@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.ee657e46.chunk.css",
+    "main.js": "/Portfolio/static/js/main.180f6cd1.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.180f6cd1.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.a4a5e224.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.a4a5e224.js.map",
+    "static/js/2.4d256297.chunk.js": "/Portfolio/static/js/2.4d256297.chunk.js",
+    "static/js/2.4d256297.chunk.js.map": "/Portfolio/static/js/2.4d256297.chunk.js.map",
+    "static/js/3.5173e84d.chunk.js": "/Portfolio/static/js/3.5173e84d.chunk.js",
+    "static/js/3.5173e84d.chunk.js.map": "/Portfolio/static/js/3.5173e84d.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.ee657e46.chunk.css.map": "/Portfolio/static/css/main.ee657e46.chunk.css.map",
+    "static/js/2.4d256297.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.4d256297.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/Portfolio/static/media/Laticrete-thumbnail.9d2b71f8.png",
+    "static/media/kishor-ghising.fe24dff6.png": "/Portfolio/static/media/kishor-ghising.fe24dff6.png",
+    "static/media/logo.2d356c64.svg": "/Portfolio/static/media/logo.2d356c64.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4a5e224.js",
+    "static/js/2.4d256297.chunk.js",
+    "static/css/main.ee657e46.chunk.css",
+    "static/js/main.180f6cd1.chunk.js"
+  ]
+}
