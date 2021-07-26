@@ -1,26 +1,37 @@
+.card-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 .thumbnail-card {
     width: 100%;
-    height: 12rem;
-    background-color: map-get($map: $theme-colors, $key: 'blue');
+    height: 18rem;
+    border-radius: 0.5rem;
     display: flex;
     align-items: flex-end;
+    border: 1px solid map-get($map: $theme-colors, $key: 'secondary');
 
     .card-content {
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
         margin-bottom: 1rem;
-
-        .project-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: map-get($map: $theme-colors, $key: "secondary");
-        }
-
-        .project-field {
-            font-size: 1rem;
-            font-weight: 700;
-            color: map-get($map: $theme-colors, $key: "secondary");
-        }
     }
+}
+
+.thumbnail-card:hover {
+    box-shadow: 3px 3px map-get($map: $theme-colors, $key: 'blue');
+    border: 1px solid map-get($map: $theme-colors, $key: 'blue');
+}
+
+.card-link:focus {
+    cursor: progress;
+    outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+    outline-offset: 0.5rem;
+}
+
+.laticrete {
+    background-image: url(../Images//laticrete/Laticrete-thumbnail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }

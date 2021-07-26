@@ -8,11 +8,11 @@ class ThumbnailCard extends React.Component{
     render() {
         return(
             <React.Fragment>
-                <Link to={PROJECT_DETAILS_URL}>
-                    <div className="thumbnail-card">
+                <Link to={PROJECT_DETAILS_URL} className="card-link">
+                    <div className="thumbnail-card laticrete">
                         <div className="card-content">
-                            <h3 className="project-title">{this.props.projectTitle}</h3>
-                            <h4 className="project-field">{this.props.projectField}</h4>
+                            <h4 className="project-title">{this.props.projectTitle}</h4>
+                            <h5 className="project-field">{this.props.projectField}</h5>
                         </div>
                     </div>
                 </Link>

@@ -8,14 +8,11 @@ import ThumbnailCard from '../Components/ThumbnailCard';
 class Project extends React.Component {
   render() {
     return (
-      <section className='projects' >
-        <div className="sort-info">
-          <p>Hi, I'm a UI/UX designer<br />based on Kathmandu, Nepal.</p>
-        </div>
+      <div className='projects' >
         <div className="grid-container">
           <ThumbnailCard projectTitle="This is title" projectField="UX" projectName="project-name" />
         </div>
-      </section>
+      </div>
     );
   }
 }

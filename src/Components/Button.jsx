@@ -7,7 +7,7 @@ import {faPaperPlane} from '@fortawesome/free-regular-svg-icons';
 class Button extends React.Component{
     render() {
         return(
-            <button className="button">
+            <button className="button body3">
                 {this.props.name} 
                 <FontAwesomeIcon className='buttonIcon' icon={faPaperPlane} size="md" />
             </button>

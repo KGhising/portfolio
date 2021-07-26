@@ -30,6 +30,9 @@ class App extends React.Component {
           <section className="main-section">
             <main className="main-container">
               <Switch>
+                <Route exact path="/">
+                  <Project></Project>
+                </Route>
                 <Route exact path={PROJECT_URL}>
                   <Project></Project>
                 </Route>

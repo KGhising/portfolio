@@ -8,7 +8,7 @@ class NavLink extends React.Component {
     const clsName = `nav-item ${isActive ? 'active' : ''}`;
     return (
       <li className={clsName}>
-        <Link to={this.props.url} className='nav-link'>
+        <Link to={this.props.url} className='nav-link body3'>
           {this.props.children}
           {isActive}
         </Link>

@@ -1,26 +1,23 @@
 .button {
     background-color: map-get($map: $theme-colors, $key: 'primary');
     color: map-get($map: $theme-colors, $key: 'white');
-    border-radius: 2px;
+    border-radius: 0.125rem;
     border: none;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    padding: 8px 24px 8px 24px;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 
     .buttonIcon {
-        margin-left: 10px;
+        margin-left: 0.75rem;
     }
 
     &:hover {
         background-color: map-get($map: $theme-colors, $key: 'blue');
         cursor: pointer;
     }
+    
     &:focus {
         background-color: map-get($map: $theme-colors, $key: 'blue');
         cursor: progress;
-        outline:2px dashed map-get($map: $theme-colors, $key: 'black');
+        outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
         outline-offset: 0.5rem;
     }
 }

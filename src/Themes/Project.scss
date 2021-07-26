@@ -1,14 +1,7 @@
 .projects {
-    .sort-info {
-        font-size: 1.4rem;
-        color: map-get($map: $theme-colors, $key: 'black');
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-gap: 0.1rem;
+        grid-gap: 1rem;
     }
 }

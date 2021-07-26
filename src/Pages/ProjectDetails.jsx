@@ -6,7 +6,7 @@ class ProjectDetails extends React.Component {
   render() {
     return (
       <div className='project-details'>
-        <h1>Project Details</h1>
+        {/* <img src="../Images//laticrete/Laticrete-design.png" alt="laticrete project" /> */}
       </div>
     );
   }

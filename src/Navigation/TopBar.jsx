@@ -13,7 +13,7 @@ class TopBar extends React.Component {
                     <h4 htmlFor="logo" className="title-name">Kishor Ghising</h4>
                 </div>
                 <a href="#" className="download-cv">
-                    <label htmlFor="download-icon" className="body3" >Resume</label>
+                    <label htmlFor="download-icon">Resume</label>
                     <FontAwesomeIcon className="icon" icon={faArrowAltCircleDown} size="md" />  
                 </a>
             </div>

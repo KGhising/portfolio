@@ -11,6 +11,7 @@
 @import 'Project';
 @import 'Contact';
 @import 'About';
+@import 'ProjectDetails';
 
 * {
     margin: 0;
@@ -24,7 +25,8 @@ body {
 }
 .App {
     .navbar-container, .bottom-bar-container {
-        background-color: map-get($map: $theme-colors, $key: 'lightblue');
+        background-color: map-get($map: $theme-colors, $key: 'blue-light-1');
+        border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
     }
     .bottom-bar-container {
         position: fixed;
