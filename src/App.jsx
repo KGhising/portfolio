@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import './Themes/App.scss';
 import Topbar from './Navigation/TopBar'
@@ -30,20 +30,19 @@ class App extends React.Component {
           <section className="main-section">
             <main className="main-container">
               <Switch>
-                <Route exact path="/">
-                  <Project></Project>
-                </Route>
                 <Route exact path={PROJECT_URL}>
                   <Project></Project>
                 </Route>
-                <Route exact path={ABOUT_URL}>
+                <Route path={ABOUT_URL}>
                   <About></About>
                 </Route>
-                <Route exact path={CONTACT_URL}>
+                <Route path={CONTACT_URL}>
                   <Contact></Contact>
                 </Route>
-                <Route exact path={PROJECT_DETAILS_URL}>
+                <Route path={PROJECT_DETAILS_URL}>
                   <ProjectDetails></ProjectDetails>
+                </Route>
+                <Route path="*" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>
               </Switch>
             </main>

@@ -28,19 +28,16 @@ body {
         background-color: map-get($map: $theme-colors, $key: 'blue-light-1');
         border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
     }
-    .bottom-bar-container {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
 
     .main-section {
         width: 90%;
         margin: auto;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 
-        .main-container {
-            margin-top: 2rem;
-        }
+    .bottom-bar-container {
+        bottom: 0;
+        width: 100%;
     }
 }

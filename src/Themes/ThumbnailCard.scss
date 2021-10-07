@@ -30,8 +30,12 @@
     outline-offset: 0.5rem;
 }
 
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
 .laticrete {
-    background-image: url(../Images//laticrete/Laticrete-thumbnail.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }

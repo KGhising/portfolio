@@ -6,14 +6,13 @@ import { PROJECT_DETAILS_URL } from '../Constants/appUrls';
 
 class ThumbnailCard extends React.Component{
     render() {
+        const style = {
+            backgroundImage: `url(${this.props.thumbnail})`,
+        }
         return(
             <React.Fragment>
                 <Link to={PROJECT_DETAILS_URL} className="card-link">
-                    <div className="thumbnail-card laticrete">
-                        <div className="card-content">
-                            <h4 className="project-title">{this.props.projectTitle}</h4>
-                            <h5 className="project-field">{this.props.projectField}</h5>
-                        </div>
+                    <div className="thumbnail-card laticrete" style={style}>
                     </div>
                 </Link>
             </React.Fragment>
