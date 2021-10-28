@@ -9,7 +9,7 @@ class TopBar extends React.Component {
         return (
             <div className="top-navbar">
                 <div className="personal-logo">
-                    <img className="logo" src={logo} alt="Kishor Ghising Logo" />
+                    <abbr title="Kishor Ghising Logo"><img className="logo" src={logo} alt="Kishor Ghising Logo"/></abbr>
                     <h4 htmlFor="logo" className="title-name">Kishor Ghising</h4>
                 </div>
                 <a href="#" className="download-cv">

@@ -7,14 +7,14 @@ import {
   PROJECT_URL,
   ABOUT_URL,
   CONTACT_URL,
-  PROJECT_DETAILS_URL,
+  LATICRETE_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
 import Project from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import ProjectDetails from './Pages/ProjectDetails';
+import LaticreteDesign from './projectPages/LaticreteDesign';
 
 class App extends React.Component {
   render() {
@@ -39,8 +39,8 @@ class App extends React.Component {
                 <Route path={CONTACT_URL}>
                   <Contact></Contact>
                 </Route>
-                <Route path={PROJECT_DETAILS_URL}>
-                  <ProjectDetails></ProjectDetails>
+                <Route path={LATICRETE_URL}>
+                  <LaticreteDesign></LaticreteDesign>
                 </Route>
                 <Route path="*" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>

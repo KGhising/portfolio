@@ -10,63 +10,62 @@ class Contact extends React.Component {
   render() {
     return (
       <div className='contact'>
-        <h3 className="contact-heading">Find me on.</h3>
-        <div className="social-link-container">
-          <div className="dribbble icon-name-container">
-            <div className="icon-container">
-              <a href="https://dribbble.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faDribbble} size="3x" /></a>
+        <div className="social-link">
+          <h4 className="contact-heading">Find me on.</h4>
+          <div className="social-link-container">
+            <div className="dribbble icon-name-container">
+              <div className="icon-container">
+                <a href="https://dribbble.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faDribbble} size="2x" /></a>
+              </div>
+              <h6>Dribbble</h6>
             </div>
-            <h5>Dribbble</h5>
-          </div>
-          <div className="hehance icon-name-container">
-            <div className="icon-container">
-              <a href="https://www.behance.net/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faBehance} size="3x" /></a>
+            <div className="hehance icon-name-container">
+              <div className="icon-container">
+                <a href="https://www.behance.net/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faBehance} size="2x" /></a>
+              </div>
+              <h6>Behance</h6>
             </div>
-            <h5>Behance</h5>
-          </div>
-          <div className="linkedin icon-name-container">
-            <div className="icon-container">
-              <a href="https://dribbble.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faLinkedinIn} size="3x" /></a>
+            <div className="linkedin icon-name-container">
+              <div className="icon-container">
+                <a href="https://dribbble.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faLinkedinIn} size="2x" /></a>
+              </div>
+              <h6>Linkedin</h6>
             </div>
-            <h5>Linkedin</h5>
-          </div>
-          <div className="instagram icon-name-container">
-            <div className="icon-container">
-              <a href="https://www.instagram.com/kghisinga/" target="_blank"><FontAwesomeIcon className="icon" icon={faInstagram} size="3x" /></a>
+            <div className="instagram icon-name-container">
+              <div className="icon-container">
+                <a href="https://www.instagram.com/kghisinga/" target="_blank"><FontAwesomeIcon className="icon" icon={faInstagram} size="2x" /></a>
+              </div>
+              <h6>Instagram</h6>
             </div>
-            <h5>Instagram</h5>
-          </div>
-          <div className="twitter icon-name-container">
-            <div className="icon-container">
-              <a href="https://twitter.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faTwitter} size="3x" /></a>
+            <div className="twitter icon-name-container">
+              <div className="icon-container">
+                <a href="https://twitter.com/kghisinga" target="_blank"><FontAwesomeIcon className="icon" icon={faTwitter} size="2x" /></a>
+              </div>
+              <h6>Twitter</h6>
             </div>
-            <h5>Twitter</h5>
-          </div>
-          <div className="github icon-name-container">
-            <div className="icon-container">
-              <a href="https://github.com/KGhising" target="_blank"><FontAwesomeIcon className="icon" icon={faGithub} size="3x" /></a>
+            <div className="github icon-name-container">
+              <div className="icon-container">
+                <a href="https://github.com/KGhising" target="_blank"><FontAwesomeIcon className="icon" icon={faGithub} size="2x" /></a>
+              </div>
+              <h6>Github</h6>
             </div>
-            <h5>Github</h5>
           </div>
         </div>
-        
-      <div className="form-section">
-          <h3 className="contact-heading form-heading">Feel free to leave a message.</h3>
-          <div className="form-container">
+        <div className="form-section">
+          <h4 className="contact-heading form-heading">Feel free to leave a message.</h4>
             <form action="#" method="post" autocomplete="on" className="form">
               <div className="email-container">
                 <label htmlFor="email" className="label">Email</label><br/>
                 <input className="input-field body2" type="email" name="email" id="email" placeholder="Email" /><br/>
               </div>
               <div className="message-container">
-                <label htmlFor="email" className="label">Email</label><br/>
-                <textarea className="text-area body2" name="message" placeholder="Message" id="message"></textarea><br/>
+                <label htmlFor="email" className="label">Message</label><br/>
+                <textarea className="text-area body2" name="message" placeholder="Your message" id="message"></textarea><br/>
               </div>
               <div className="button-container">
                 <Button name="Send Your Message"/>
               </div>
             </form>
-          </div>
         </div>
       </div>
     );

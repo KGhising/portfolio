@@ -19,9 +19,12 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: Constantia;
     font-size: 16px;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
 .App {
     .navbar-container, .bottom-bar-container {
@@ -32,12 +35,8 @@ body {
     .main-section {
         width: 90%;
         margin: auto;
+        max-width: 75rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
-    }
-
-    .bottom-bar-container {
-        bottom: 0;
-        width: 100%;
     }
 }
