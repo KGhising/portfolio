@@ -12,9 +12,9 @@ class Navigations extends React.Component {
     return (
         <React.Fragment>
             <div className="navbar">
-              <NavLink url={PROJECT_URL} className="body3">Project</NavLink>
-              <NavLink url={ABOUT_URL} className="body3">About</NavLink>
-              <NavLink url={CONTACT_URL} className="body3">Contact</NavLink>
+              <NavLink url={PROJECT_URL}>Project</NavLink>
+              <NavLink url={ABOUT_URL}>About</NavLink>
+              <NavLink url={CONTACT_URL}>Contact</NavLink>
             </div>
         </React.Fragment>
     );

@@ -4,12 +4,6 @@ import { withRouter } from 'react-router-dom';
 
 import { projects } from '../Constants/images';
 import ThumbnailCard from '../Components/ThumbnailCard';
-import laticreteThumbnail from '../Images/laticrete/laticreteThumbnail.png';
-import craftlalitapurThumbnail from '../Images/craftlalitapur/craftlalitapurThumbnail.png';
-import gundrookThumbnail from '../Images/gundrook/gundrookThumbnail.png';
-import cropprotechnepalThumbnail from '../Images/cropprotechnepal/cropprotechnepalThumbnail.png';
-
-import laticreteDesign from '../Images/laticrete/laticreteDesign.png';
 
 class Project extends React.Component {
   render() {

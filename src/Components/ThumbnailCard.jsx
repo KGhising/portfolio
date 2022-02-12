@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
-import { LATICRETE_URL } from '../Constants/appUrls';
-import laticrete from '../Images/laticrete/laticreteThumbnail.png';
-
 class ThumbnailCard extends React.Component{
     render() {
         const project = this.props.project;
-        console.log(project.thumbnailPath);
-        const style = {
-            backgroundImage: `url(${project.thumbnailPath})`, 
-        }
+        const bgUrl = {
+            backgroundImage: `url(${project.thumbnailPath})`,
+          };
+          console.log(bgUrl);
         return(
             <React.Fragment>
-                <Link to={LATICRETE_URL} bgImage={this.props.project.designPath} className="card-link">
-                    <div className="thumbnail-card laticrete" style={style}>
+                <Link to={project.detailpageUrl} className="card-link">
+                    <div className="thumbnail-card" style={bgUrl}>
+                        <div className="thumbnail-card-content">
+                            <span><label>{project.name}</label>, {project.type}</span>
+                        </div>
                     </div>
                 </Link>
             </React.Fragment>

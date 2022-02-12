@@ -1,26 +1,27 @@
+import chasmaghar from '../Images/chasmaghar/chasmagharThumbnail.png';
+import mirasacademy from '../Images/mirasacademy/mirasacademyThumbnail.png';
+import laticrete from '../Images/laticrete/laticreteThumbnail.png';
+
 export const projects = [
+    {
+        name: "Chasmaghar",
+        type: "UX Design",
+        designPath: "../Images/chasmaghar/chasmagharDesign.png",
+        thumbnailPath: chasmaghar,
+        detailpageUrl: "/projects/chasmaghar",
+    },
+    {
+        name: "Miras Academy",
+        type: "UX Design",
+        designPath: "../Images/mirasacademy/mirasacademyDesign.png",
+        thumbnailPath: mirasacademy,
+        detailpageUrl: "/projects/mirasacademy",
+    },
     {
         name: "Laticrete",
         type: "UI Design",
         designPath: "../Images/laticrete/laticreteDesign.png",
-        thumbnailPath: "../Images/laticrete/laticreteThumbnail.png",
-    },
-    {
-        name: "Laticrete",
-        type: "UI Design",
-        designPath: "../Images/laticrete/gundrookDesign.png",
-        thumbnailPath: "../Images/laticrete/laticreteThumbnail.png",
-    },
-    {
-        name: "Laticrete",
-        type: "UI Design",
-        designPath: "../Images/laticrete/craftlalitapurDesign.png",
-        thumbnailPath: "../Images/laticrete/laticreteThumbnail.png",
-    },
-    {
-        name: "Laticrete",
-        type: "UI Design",
-        designPath: "../Images/laticrete/cropprotechnepalDesign.png",
-        thumbnailPath: "../Images/laticrete/laticreteThumbnail.png",
+        thumbnailPath: laticrete,
+        detailpageUrl: "/projects/laticrete",
     },
 ];

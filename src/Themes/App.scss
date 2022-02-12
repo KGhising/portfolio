@@ -27,6 +27,20 @@ html, body {
     overflow-x:hidden;
 }
 .App {
+    .top-navbar-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .navbar-container {
+        position: -webkit-sticky;
+	    position: sticky;
+        top: 0;
+    }
+
     .navbar-container, .bottom-bar-container {
         background-color: map-get($map: $theme-colors, $key: 'blue-light-1');
         border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
@@ -36,7 +50,7 @@ html, body {
         width: 90%;
         margin: auto;
         max-width: 75rem;
-        margin-top: 2rem;
+        margin-top: 10rem;
         margin-bottom: 2rem;
     }
 }

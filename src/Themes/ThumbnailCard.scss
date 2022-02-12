@@ -5,37 +5,34 @@
 
 .thumbnail-card {
     width: 100%;
-    height: 18rem;
+    height: 24rem;
+    padding: 1rem;
+    overflow: hidden;
     border-radius: 0.5rem;
     display: flex;
     align-items: flex-end;
-    border: 1px solid map-get($map: $theme-colors, $key: 'secondary');
+    border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    .card-content {
-        display: flex;
-        flex-direction: column;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
+    .thumbnail-card-content {
+        margin-bottom: -2rem;
+        color: map-get($map: $theme-colors, $key: 'secondary');
     }
 }
 
 .thumbnail-card:hover {
     box-shadow: 3px 3px map-get($map: $theme-colors, $key: 'blue');
     border: 1px solid map-get($map: $theme-colors, $key: 'blue');
+
+    .thumbnail-card-content {
+        margin-bottom: 0;
+    }
 }
 
 .card-link:focus {
     cursor: progress;
     outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
     outline-offset: 0.5rem;
-}
-
-.thumbnail {
-    width: 100%;
-    aspect-ratio: 1;
-}
-
-.laticrete {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
