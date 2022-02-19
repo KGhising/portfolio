@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import './Themes/App.scss';
 import Topbar from './Navigation/TopBar'
@@ -19,7 +19,7 @@ import LaticreteDesign from './projectPages/LaticreteDesign';
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <div className="App">
           <header className="top-navbar-container">
             <Topbar />
@@ -51,7 +51,7 @@ class App extends React.Component {
             <BottomBar />
           </footer>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
