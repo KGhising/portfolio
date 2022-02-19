@@ -42,7 +42,7 @@ class App extends React.Component {
                 <Route path={LATICRETE_URL}>
                   <LaticreteDesign></LaticreteDesign>
                 </Route>
-                <Route path="*" render={()=> <Redirect to={PROJECT_URL}/>}>
+                <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>
               </Switch>
             </main>
