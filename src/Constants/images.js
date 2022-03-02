@@ -8,20 +8,20 @@ export const projects = [
         type: "UX Design",
         designPath: "../Images/chasmaghar/chasmagharDesign.png",
         thumbnailPath: chasmaghar,
-        detailpageUrl: "/projects/chasmaghar",
+        detailpageUrl: "/portfolio/projects/chasmaghar",
     },
     {
         name: "Miras Academy",
         type: "UX Design",
         designPath: "../Images/mirasacademy/mirasacademyDesign.png",
         thumbnailPath: mirasacademy,
-        detailpageUrl: "/projects/mirasacademy",
+        detailpageUrl: "/portfolio/projects/mirasacademy",
     },
     {
         name: "Laticrete",
         type: "UI Design",
         designPath: "../Images/laticrete/laticreteDesign.png",
         thumbnailPath: laticrete,
-        detailpageUrl: "/projects/laticrete",
+        detailpageUrl: "/portfolio/projects/laticrete",
     },
 ];
