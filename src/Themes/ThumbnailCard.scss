@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    filter: grayscale(100%);
 
     .thumbnail-card-content {
         margin-bottom: -2rem;
@@ -25,6 +26,7 @@
 .thumbnail-card:hover {
     box-shadow: 3px 3px map-get($map: $theme-colors, $key: 'blue');
     border: 1px solid map-get($map: $theme-colors, $key: 'blue');
+    filter: grayscale(0%);
 
     .thumbnail-card-content {
         margin-bottom: 0;
