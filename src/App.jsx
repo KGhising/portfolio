@@ -16,7 +16,7 @@ import Project from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import LaticreteDesign from './projectPages/LaticreteDesign';
-import PioneerDesign from './projectPages/LaticreteDesign';
+import Pioneer from './projectPages/Pioneeer';
 
 class App extends React.Component {
   render() {
@@ -45,7 +45,7 @@ class App extends React.Component {
                   <LaticreteDesign></LaticreteDesign>
                 </Route>
                 <Route path={PIONEER_URL}>
-                  <LaticreteDesign></LaticreteDesign>
+                  <Pioneer></Pioneer>
                 </Route>
                 <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>

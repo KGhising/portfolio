@@ -1,10 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouter, Link, useHistory } from 'react-router-dom';
-
-import {
-  PROJECT_URL
-} from '../Constants/appUrls';
+import { withRouter, useHistory } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';

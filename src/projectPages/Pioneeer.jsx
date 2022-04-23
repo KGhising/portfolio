@@ -4,8 +4,7 @@ import { withRouter, Link, useHistory } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
-
-import laticreteDesign from '../Images/laticrete/laticreteDesign.png';
+import { pioneerImages } from '../Constants/pioneerImage';
 
 const ProjectDetails = () =>   {
   const history = useHistory();
@@ -14,16 +13,22 @@ const ProjectDetails = () =>   {
     history.push("/projects");
   }
 
-  const style = {
-    backgroundImage: `url(${laticreteDesign})`,
-  }
+  const imageArray = pioneerImages;
+  const imageContainer = imageArray.map((image, index) => {
+    return (
+      <img className='design-img' src={image.imagePath} alt={image.altText} key={index} />
+    )});
+
   return (
     <section>
-      <a onClick={handleClick} className="back-button">
-        <FontAwesomeIcon className="left-icon" icon={faArrowAltCircleLeft} size="md" />
-        <label htmlFor="back-icon">Back</label>
-      </a>
-      <div className='project-details' style={style}>
+      <div className="back-button-container">
+        <a onClick={handleClick} className="back-button">
+          <FontAwesomeIcon className="left-icon" icon={faArrowAltCircleLeft} size="md" />
+          <label htmlFor="back-icon">Back</label>
+        </a>
+      </div>
+      <div className='project-details'>
+        {imageContainer}
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-import { projects } from '../Constants/images';
+import { projects } from '../Constants/project';
 import ThumbnailCard from '../Components/ThumbnailCard';
 
 class Project extends React.Component {
