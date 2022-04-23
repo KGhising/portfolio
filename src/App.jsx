@@ -21,7 +21,7 @@ import PioneerDesign from './projectPages/LaticreteDesign';
 class App extends React.Component {
   render() {
     return (
-      <Router basename='/portfolio'>
+      <Router>
         <div className="App">
           <header className="top-navbar-container">
             <Topbar />
