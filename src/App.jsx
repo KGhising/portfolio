@@ -9,14 +9,18 @@ import {
   CONTACT_URL,
   LATICRETE_URL,
   PIONEER_URL,
+  MIRASACADEMY_URL,
+  CHASMAGHAR_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
 import Project from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import LaticreteDesign from './projectPages/LaticreteDesign';
+import Laticrete from './projectPages/Laticrete';
 import Pioneer from './projectPages/Pioneeer';
+import Miras from './projectPages/Miras';
+import Chasmaghar from './projectPages/Chasmaghar';
 
 class App extends React.Component {
   render() {
@@ -42,10 +46,16 @@ class App extends React.Component {
                   <Contact></Contact>
                 </Route>
                 <Route path={LATICRETE_URL}>
-                  <LaticreteDesign></LaticreteDesign>
+                  <Laticrete></Laticrete>
                 </Route>
                 <Route path={PIONEER_URL}>
                   <Pioneer></Pioneer>
+                </Route>
+                <Route path={MIRASACADEMY_URL}>
+                  <Miras></Miras>
+                </Route>
+                <Route path={CHASMAGHAR_URL}>
+                  <Chasmaghar></Chasmaghar>
                 </Route>
                 <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>

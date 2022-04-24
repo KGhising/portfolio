@@ -1,8 +1,11 @@
 .contact {
     display: flex;
+    width: 100%;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     row-gap: 4rem;
+    min-height: 70vh;
 
     .social-link {
         .contact-heading {
@@ -72,6 +75,13 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact {
+        width: 90%;
+        margin: auto;
     }
 }
 
