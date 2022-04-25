@@ -4,8 +4,7 @@ import { withRouter, useHistory } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft } from '@fortawesome/free-regular-svg-icons';
-
-import laticreteDesign from '../Images/laticrete/laticreteDesign.png';
+import { wwfImages } from '../Constants/wwfImage';
 
 const ProjectDetails = () =>   {
   const history = useHistory();
@@ -13,6 +12,12 @@ const ProjectDetails = () =>   {
   function handleClick() {
     history.push("/projects");
   }
+
+  const imageArray = wwfImages;
+  const imageContainer = imageArray.map((image, index) => {
+    return (
+      <img className='design-img' src={image.imagePath} alt={image.altText} key={index} />
+    )});
 
   return (
     <section>
@@ -23,7 +28,7 @@ const ProjectDetails = () =>   {
         </a>
       </div>
       <div className='project-details'>
-        <img className='design-img' src={laticreteDesign} alt='laticrete design' />
+        {imageContainer}
       </div>
     </section>
   );

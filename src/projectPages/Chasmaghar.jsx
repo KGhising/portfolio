@@ -29,7 +29,7 @@ const ProjectDetails = () =>   {
       </div>
       <div className='project-details'>
         {/* {imageContainer} */}
-        <h3 className='comming-soon-heading'>Comming Soon...</h3>
+        <h3 className='comming-soon-heading'>Coming Soon...</h3>
       </div>
     </section>
   );

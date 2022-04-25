@@ -7,20 +7,20 @@ import {
   PROJECT_URL,
   ABOUT_URL,
   CONTACT_URL,
-  LATICRETE_URL,
   PIONEER_URL,
   MIRASACADEMY_URL,
   CHASMAGHAR_URL,
+  WWF_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
 import Project from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
-import Laticrete from './projectPages/Laticrete';
 import Pioneer from './projectPages/Pioneeer';
 import Miras from './projectPages/Miras';
 import Chasmaghar from './projectPages/Chasmaghar';
+import Wwf from './projectPages/Wwf';
 
 class App extends React.Component {
   render() {
@@ -45,9 +45,6 @@ class App extends React.Component {
                 <Route path={CONTACT_URL}>
                   <Contact></Contact>
                 </Route>
-                <Route path={LATICRETE_URL}>
-                  <Laticrete></Laticrete>
-                </Route>
                 <Route path={PIONEER_URL}>
                   <Pioneer></Pioneer>
                 </Route>
@@ -56,6 +53,9 @@ class App extends React.Component {
                 </Route>
                 <Route path={CHASMAGHAR_URL}>
                   <Chasmaghar></Chasmaghar>
+                </Route>
+                <Route path={WWF_URL}>
+                  <Wwf></Wwf>
                 </Route>
                 <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>

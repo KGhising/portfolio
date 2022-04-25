@@ -1,6 +1,6 @@
 import chasmaghar from '../Images/chasmaghar/chasmagharThumbnail.png';
 import mirasacademy from '../Images/mirasacademy/mirasacademyThumbnail.png';
-import laticrete from '../Images/laticrete/laticreteThumbnail.png';
+import wwf from '../Images/wwf/wwfThumbnail.png';
 import pioneer from '../Images/pioneer/pioneerThumbnail.png';
 
 export const projects = [
@@ -23,9 +23,9 @@ export const projects = [
         detailpageUrl: "/projects/mirasacademy",
     },
     {
-        name: "Laticrete",
-        type: "UI Design",
-        thumbnailPath: laticrete,
-        detailpageUrl: "/projects/laticrete",
+        name: "WWF",
+        type: "UI Design & Development",
+        thumbnailPath: wwf,
+        detailpageUrl: "/projects/wwf",
     },
 ];
