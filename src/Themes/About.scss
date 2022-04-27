@@ -1,6 +1,4 @@
 .about {
-    min-height: 80vh;
-    padding-bottom: 2rem;
     .art-container {
         position: relative;
         display: flex;
@@ -44,7 +42,7 @@
     }
 
     .content-container {
-        width: 60%;
+        max-width: 56rem;
         margin: auto;
         display: flex;
         justify-content: center;
@@ -52,6 +50,12 @@
         .content > * {
             margin-top: 1.5rem;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .content-container {
+        width: 90%;
     }
 }
 
@@ -94,9 +98,6 @@
 @media screen and (max-width: 425px) {
 
     .about {
-        .content-container {
-            width: 90%;
-        }
         .art-container {
             .circle-name-container {
                 .kishor {

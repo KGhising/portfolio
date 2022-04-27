@@ -10,7 +10,7 @@ class Project extends React.Component {
     const projectArray = projects;
     const projectContainer = projectArray.map((project, index) => {
       return (
-          <div className="grid-container" key={index}>
+          <div className="cards-container" key={index}>
             <ThumbnailCard project={project} />
           </div>
       )});

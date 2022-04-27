@@ -72,11 +72,11 @@ export const Contact = () => {
           <form ref={form} onSubmit={sendEmail} method="post" className="form">
             <div className="email-container">
               <label htmlFor="email" className="label">Email</label><br/>
-              <input className="input-field body2" type="email" name="email" id="email" placeholder="Email" /><br/>
+              <input className="input-field body2" type="email" name="email" id="email" placeholder="Email" required /><br/>
             </div>
             <div className="message-container">
               <label htmlFor="email" className="label">Message</label><br/>
-              <textarea className="text-area body2" name="message" placeholder="Your message" id="message"></textarea><br/>
+              <textarea className="text-area body2" name="message" placeholder="Your message" id="message" required ></textarea><br/>
             </div>
             <div className="button-container">
               <Button name="Send Your Message"/>

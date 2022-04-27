@@ -26,10 +26,12 @@
 }
 
 .download-cv {
-    display: flex;
-    column-gap: 0.5rem;
-    align-items: center;
+    display: inline-block;
     text-decoration: none;
+
+    .icon {
+        margin-left: 0.25rem;
+    }
 
     label, .icon {
         color: map-get($map: $theme-colors, $key: 'primary');
@@ -38,10 +40,11 @@
     &:hover {
         label, .icon {
             cursor: pointer;
+            text-decoration: underline;
             color: map-get($map: $theme-colors, $key: 'blue');
         }
         .icon {
-            margin-top: 0.25rem;
+            margin-left: 0.5rem;
         }
     }
     &:focus {
