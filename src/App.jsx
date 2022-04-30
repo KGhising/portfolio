@@ -7,6 +7,7 @@ import {
   PROJECT_URL,
   ABOUT_URL,
   CONTACT_URL,
+  BLOG_URL,
   PIONEER_URL,
   MIRASACADEMY_URL,
   CHASMAGHAR_URL,
@@ -14,9 +15,10 @@ import {
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
-import Project from './Pages/Project';
+import Projects from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import Blog from './Pages/Blog';
 import Pioneer from './projectPages/Pioneeer';
 import Miras from './projectPages/Miras';
 import Chasmaghar from './projectPages/Chasmaghar';
@@ -37,13 +39,16 @@ class App extends React.Component {
             <main className="main-container">
               <Switch>
                 <Route exact path={PROJECT_URL}>
-                  <Project></Project>
+                  <Projects></Projects>
                 </Route>
                 <Route path={ABOUT_URL}>
                   <About></About>
                 </Route>
                 <Route path={CONTACT_URL}>
                   <Contact></Contact>
+                </Route>
+                <Route path={BLOG_URL}>
+                  <Blog></Blog>
                 </Route>
                 <Route path={PIONEER_URL}>
                   <Pioneer></Pioneer>

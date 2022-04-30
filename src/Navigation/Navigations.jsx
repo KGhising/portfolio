@@ -5,6 +5,7 @@ import {
     PROJECT_URL,
     ABOUT_URL,
     CONTACT_URL,
+    BLOG_URL,
 } from '../Constants/appUrls';
 
 class Navigations extends React.Component {
@@ -12,9 +13,10 @@ class Navigations extends React.Component {
     return (
         <React.Fragment>
             <div className="navbar">
-              <NavLink url={PROJECT_URL}>Project</NavLink>
+              <NavLink url={PROJECT_URL}>Projects</NavLink>
               <NavLink url={ABOUT_URL}>About</NavLink>
               <NavLink url={CONTACT_URL}>Contact</NavLink>
+              <NavLink url={BLOG_URL}>Blogs<sup className='sup'>New</sup></NavLink>
             </div>
         </React.Fragment>
     );
