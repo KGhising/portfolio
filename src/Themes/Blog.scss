@@ -1,0 +1,89 @@
+.blogs {
+    width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+    .loading {
+        text-align: center;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.7rem;
+    
+        .blog-link {
+            text-decoration: none;
+            width: fit-content;
+            color: map-get($map: $theme-colors, $key: "primary");
+        }
+
+        .blog-link:hover {
+            color: map-get($map: $theme-colors, $key: "blue");
+        }
+
+        .blog-link:focus {
+            cursor: progress;
+            outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+            outline-offset: 0.3rem;
+        }
+
+        .blog-description {
+            line-height: 1.3rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+                    line-clamp: 3; 
+            -webkit-box-orient: vertical;
+        }
+
+        .sub-info {
+            display: flex;
+            align-items: center;
+            column-gap: 0.5rem;
+            color: map-get($map: $theme-colors, $key: "gray");
+
+            .publish-date {
+                color: map-get($map: $theme-colors, $key: "gray");
+            }
+
+            .seperator {
+                height: 0.2rem;
+                width: 0.2rem;
+                margin-top: 0.4rem;
+                background-color: map-get($map: $theme-colors, $key: "gray");
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 16rem;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blogs {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blogs {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+}

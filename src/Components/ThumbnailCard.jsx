@@ -8,7 +8,6 @@ class ThumbnailCard extends React.Component{
         const bgUrl = {
             backgroundImage: `url(${project.thumbnailPath})`,
           };
-          console.log(bgUrl);
         return(
             <React.Fragment>
                 <Link to={project.detailpageUrl} className="card-link">
