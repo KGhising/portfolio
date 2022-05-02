@@ -11,12 +11,6 @@ export const projects = [
         detailpageUrl: "/projects/pioneer",
     },
     {
-        name: "Chasmaghar",
-        type: "UX Design",
-        thumbnailPath: chasmaghar,
-        detailpageUrl: "/projects/chasmaghar",
-    },
-    {
         name: "Miras Academy",
         type: "UX Design",
         thumbnailPath: mirasacademy,
@@ -27,5 +21,11 @@ export const projects = [
         type: "UI Design & Development",
         thumbnailPath: wwf,
         detailpageUrl: "/projects/wwf",
+    },
+    {
+        name: "Chasmaghar",
+        type: "UX Design",
+        thumbnailPath: chasmaghar,
+        detailpageUrl: "/projects/chasmaghar",
     },
 ];
