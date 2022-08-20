@@ -7,7 +7,7 @@ class TopBar extends React.Component {
             <div className="top-navbar">
                 <div className="personal-logo">
                     <abbr title="Kishor Ghising Logo">
-                        <svg className='logo' xmlns="http://www.w3.org/2000/svg" width="48.276" height="60" viewBox="0 0 48.276 60">
+                        <svg className='logo' xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 48.276 60">
                             <path id="logo" d="M74.566,70.65l25,35H51.29v-60H99.566Zm-2.241,2.241L54.48,90.736V102.46H93.448Z" transform="translate(-51.29 -45.65)" fill=""/>
                         </svg>
                     </abbr>
