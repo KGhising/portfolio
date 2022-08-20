@@ -9,14 +9,14 @@
         column-gap: 0.5rem;
         align-items: center;
         text-decoration: none;
-        background-color: map-get($map: $theme-colors, $key: 'blue-light-1');
+        background-color: map-get($map: $theme-colors, $key: 'blue-200');
         padding: 0.5rem 1rem;
         border-radius: 1rem;
         position: fixed;
 
 
         label, .left-icon {
-            color: map-get($map: $theme-colors, $key: 'primary');
+            color: map-get($map: $theme-colors, $key: 'blue-100');
         }
 
         &:hover {
@@ -32,13 +32,13 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $screen-md) {
     .back-button-container {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $screen-sm) {
     .back-button label {
         display: none;
     }

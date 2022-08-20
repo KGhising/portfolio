@@ -4,11 +4,14 @@
         display: flex;
         justify-content: center;
 
+        .kg-image {
+            z-index: 99;
+        }
+
         .circle-name-container {
             position: absolute;
             margin-left: -5rem;
             margin-top: 2rem;
-            z-index: -99;
 
             width: 22rem;
             height: 22rem;
@@ -26,6 +29,7 @@
         }
         .rectangle {
             position: absolute;
+            z-index: 99;
             height: 4rem;
             width: 28rem;
             display: flex;
@@ -53,13 +57,13 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $screen-md) {
     .content-container {
         width: 90%;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $screen-sm) {
     .about {
         .content-container {
             width: 90%;
@@ -73,8 +77,8 @@
                     color: map-get($map: $theme-colors, $key: 'blue');
                     -webkit-text-fill-color: transparent;
                     -webkit-text-stroke-width: 2px;
-                    -webkit-text-stroke-color: black;
-                    z-index: 999;
+                    -webkit-text-stroke-color: map-get($map: $theme-colors, $key: 'black');
+                    z-index: 99;
                 }
             }
             .rectangle {
@@ -88,14 +92,14 @@
                     color: map-get($map: $theme-colors, $key: 'blue');
                     -webkit-text-fill-color: transparent;
                     -webkit-text-stroke-width: 2px;
-                    -webkit-text-stroke-color: black;
+                    -webkit-text-stroke-color: map-get($map: $theme-colors, $key: 'black');
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: $screen-xs) {
 
     .about {
         .art-container {

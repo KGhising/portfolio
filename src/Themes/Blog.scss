@@ -18,7 +18,7 @@
         .blog-link {
             text-decoration: none;
             width: fit-content;
-            color: map-get($map: $theme-colors, $key: "primary");
+            color: map-get($map: $theme-colors, $key: "blue-100");
         }
 
         .blog-link:hover {
@@ -45,17 +45,17 @@
             display: flex;
             align-items: center;
             column-gap: 0.5rem;
-            color: map-get($map: $theme-colors, $key: "gray");
+            color: map-get($map: $theme-colors, $key: "grey");
 
             .publish-date {
-                color: map-get($map: $theme-colors, $key: "gray");
+                color: map-get($map: $theme-colors, $key: "grey");
             }
 
             .seperator {
                 height: 0.2rem;
                 width: 0.2rem;
                 margin-top: 0.4rem;
-                background-color: map-get($map: $theme-colors, $key: "gray");
+                background-color: map-get($map: $theme-colors, $key: "grey");
                 border-radius: 50%;
                 display: inline-block;
             }
@@ -69,7 +69,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $screen-md) {
     .blogs {
         width: 90%;
         margin: auto;
@@ -78,7 +78,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $screen-sm) {
     .blogs {
         width: 90%;
         margin: auto;

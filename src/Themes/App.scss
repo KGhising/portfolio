@@ -1,4 +1,5 @@
 @import 'Theme';
+@import 'Screen';
 @import 'TypeStyle';
 @import 'Topbar';
 @import 'NavLink';
@@ -26,14 +27,15 @@ html, body {
     margin:0;
     padding:0;
     overflow-x:hidden;
+    background-color: map-get($map: $theme-colors, $key: 'white');
 }
 .App {
     .top-navbar-container {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: white;
         z-index: 1000;
+        background-color: map-get($map: $theme-colors, $key: 'white');
     }
 
     .navbar-container {
@@ -43,8 +45,9 @@ html, body {
     }
 
     .navbar-container, .bottom-bar-container {
-        background-color: map-get($map: $theme-colors, $key: 'blue-light-1');
-        border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
+        background-color: map-get($map: $theme-colors, $key: 'grey-300');
+        border-top: 1px solid map-get($map: $theme-colors, $key: 'grey-200');
+        border-bottom: 1px solid map-get($map: $theme-colors, $key: 'grey-200');
     }
 
     .main-section {

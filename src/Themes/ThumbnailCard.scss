@@ -11,7 +11,7 @@
     border-radius: 0.5rem;
     display: flex;
     align-items: flex-end;
-    border: 1px solid map-get($map: $theme-colors, $key: 'gray-light-2');
+    border: 1px solid map-get($map: $theme-colors, $key: 'grey-200');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +19,7 @@
 
     .thumbnail-card-content {
         margin-bottom: -2rem;
-        color: map-get($map: $theme-colors, $key: 'secondary');
+        color: map-get($map: $theme-colors, $key: 'grey');
     }
 }
 

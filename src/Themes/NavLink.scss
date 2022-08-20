@@ -4,9 +4,9 @@
     
     .nav-link{
         text-decoration: none;
-        color: map-get($map: $theme-colors, $key: 'secondary');
+        color: map-get($map: $theme-colors, $key: 'grey-100');
         &:hover {
-            color: map-get($map: $theme-colors, $key: 'primary');
+            color: map-get($map: $theme-colors, $key: 'blue-100');
         }
         &:focus {
             outline: 2px dashed map-get($map: $theme-colors, $key: 'black');

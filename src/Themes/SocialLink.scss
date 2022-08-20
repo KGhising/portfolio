@@ -4,7 +4,7 @@
 }
 
 .social-media-links > * {
-    color: map-get($map: $theme-colors, $key: 'secondary');
+    color: map-get($map: $theme-colors, $key: 'grey');
 
     &:hover {
         color: map-get($map: $theme-colors, $key: 'blue');

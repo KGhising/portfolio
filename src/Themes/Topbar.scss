@@ -17,10 +17,11 @@
 
     .logo {
         height: 2.5rem;
+        fill: map-get($map: $theme-colors, $key: 'grey');
     }
 
     .title-name {
-        color: map-get($map: $theme-colors, $key: 'secondary');
+        color: map-get($map: $theme-colors, $key: 'grey');
         line-height: 1.5rem;
     }
 }
@@ -34,7 +35,7 @@
     }
 
     label, .icon {
-        color: map-get($map: $theme-colors, $key: 'primary');
+        color: map-get($map: $theme-colors, $key: 'blue-100');
     }
 
     &:hover {
