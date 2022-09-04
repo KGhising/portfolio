@@ -15,7 +15,7 @@ import {
   WATCHTIME_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
-import Navigations from './Navigation/Navigations'
+import Navigations from './Navigation/Navigations';
 import Projects from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
