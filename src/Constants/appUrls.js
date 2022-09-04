@@ -6,3 +6,4 @@ export const CHASMAGHAR_URL = '/projects/chasmaghar';
 export const MIRASACADEMY_URL = '/projects/mirasacademy';
 export const PIONEER_URL = '/projects/pioneer';
 export const WWF_URL = '/projects/wwf';
+export const WATCHTIME_URL = '/projects/watchtime';

@@ -12,6 +12,7 @@ import {
   MIRASACADEMY_URL,
   CHASMAGHAR_URL,
   WWF_URL,
+  WATCHTIME_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations'
@@ -23,6 +24,7 @@ import Pioneer from './projectPages/Pioneeer';
 import Miras from './projectPages/Miras';
 import Chasmaghar from './projectPages/Chasmaghar';
 import Wwf from './projectPages/Wwf';
+import Watchtime from './projectPages/Watchtime';
 
 class App extends React.Component {
   render() {
@@ -61,6 +63,9 @@ class App extends React.Component {
                 </Route>
                 <Route path={WWF_URL}>
                   <Wwf></Wwf>
+                </Route>
+                <Route path={WATCHTIME_URL}>
+                  <Watchtime></Watchtime>
                 </Route>
                 <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
                 </Route>
