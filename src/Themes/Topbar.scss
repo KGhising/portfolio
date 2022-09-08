@@ -1,6 +1,6 @@
 .top-navbar {
     width: 90%;
-    max-width: 75rem;
+    max-width: 64rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -10,13 +10,24 @@
     padding-bottom: 1rem;
 }
 
+.logo-link {
+    text-decoration: none;
+    border-radius: 0.125rem;
+    
+    &:focus {
+        cursor: progress;
+        outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+        outline-offset: 0.5rem;
+    }
+}
+
 .personal-logo {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
 
     .logo {
-        height: 2.5rem;
+        height: 2rem;
         fill: map-get($map: $theme-colors, $key: 'grey');
     }
 
@@ -26,30 +37,62 @@
     }
 }
 
+
+.action-container {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: center;
+}
+
+.button-link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.125rem;
+    background-color: map-get($map: $theme-colors, $key: 'white');
+    border: 1px solid map-get($map: $theme-colors, $key: 'grey-200');
+
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    color: map-get($map: $theme-colors, $key: 'grey');
+
+    &:hover {
+        border: 1px solid map-get($map: $theme-colors, $key: 'blue');
+        color: map-get($map: $theme-colors, $key: 'blue');
+    }
+    
+    &:focus {
+        border: 1px solid map-get($map: $theme-colors, $key: 'blue');
+        color: map-get($map: $theme-colors, $key: 'blue');
+        cursor: progress;
+        outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+        outline-offset: 0.5rem;
+    }
+}
+
 .download-cv {
     display: inline-block;
     text-decoration: none;
-
-    .icon {
-        margin-left: 0.25rem;
-    }
-
-    label, .icon {
-        color: map-get($map: $theme-colors, $key: 'blue-100');
-    }
+    color: map-get($map: $theme-colors, $key: 'grey');
 
     &:hover {
-        label, .icon {
-            cursor: pointer;
-            text-decoration: underline;
-            color: map-get($map: $theme-colors, $key: 'blue');
-        }
-        .icon {
-            margin-left: 0.5rem;
-        }
+        color: map-get($map: $theme-colors, $key: 'blue');
     }
     &:focus {
         outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
         outline-offset: 0.5rem;
+        border-radius: 0.125rem;
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .title-name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $screen-xs) {
+    .buttonIcon {
+        display: none;
     }
 }

@@ -1,91 +1,31 @@
-.contact {
-    display: flex;
+.contact-form-section {
     width: 100%;
     margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 4rem;
+    max-width: 32rem;
 
-    .social-link {
-        .contact-heading {
-            text-align: center;
-        }
-        
-        .social-link-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-top: 2.5rem;
-        
-            .icon-name-container {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
-                row-gap: 0.75rem;
-        
-                .icon-container {
-                    background-color: map-get($map: $theme-colors, $key: 'blue-100');
-                    height: 3rem;
-                    width: 3rem;
-                    border-radius: 0.5rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: auto;
-                
-                    .icon {
-                        color: map-get($map: $theme-colors, $key: 'white');
-                    }
-                }
-                &:hover {
-                    .icon-container:hover {
-                        cursor: pointer;
-                    
-                        .icon {
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    .form-section {
-        .form-heading {
-            text-align: center;
-        }
-
+    .form {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        margin: auto;
-        max-width: 32rem;
-        
-        .form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            justify-content: center;
-            .message-container, .button-container, .email-container {
-                margin-top: 1.5rem;
-    
-                textarea, input {
-                    width: 100%;
-                    background-color: transparent;
-                }
+        justify-content: center;
+        .message-container, .button-container, .email-container {
+            margin-top: 1.5rem;
 
-                textarea {
-                    min-height: 16rem;
-                }
+            textarea, input {
+                width: 100%;
+                background-color: transparent;
+            }
+
+            textarea {
+                min-height: 12rem;
             }
         }
     }
 }
 
 @media screen and (max-width: $screen-sm) {
-    .contact {
+    .contact-form-section {
         width: 90%;
-        margin: auto;
     }
 }
 

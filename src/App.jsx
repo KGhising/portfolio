@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import './Themes/App.scss';
 import Topbar from './Navigation/TopBar'
 import {
+  HOME_URL,
   PROJECT_URL,
   ABOUT_URL,
   CONTACT_URL,
@@ -13,9 +14,11 @@ import {
   CHASMAGHAR_URL,
   WWF_URL,
   WATCHTIME_URL,
+  SHOTS_DETAILS_URL,
 } from './Constants/appUrls';
 import BottomBar from './Navigation/BottomBar';
 import Navigations from './Navigation/Navigations';
+import Home from './Pages/Home';
 import Projects from './Pages/Project';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -25,6 +28,7 @@ import Miras from './projectPages/Miras';
 import Chasmaghar from './projectPages/Chasmaghar';
 import Wwf from './projectPages/Wwf';
 import Watchtime from './projectPages/Watchtime';
+import Shotpage from './Pages/Shotpage';
 
 class App extends React.Component {
   render() {
@@ -33,13 +37,16 @@ class App extends React.Component {
         <div className="App">
           <header className="top-navbar-container">
             <Topbar />
-            <nav className="navbar-container">
+            {/* <nav className="navbar-container">
               <Navigations />
-            </nav>
+            </nav> */}
           </header>
           <section className="main-section">
             <main className="main-container">
               <Switch>
+                <Route exact path={HOME_URL}>
+                  <Home></Home>
+                </Route>
                 <Route exact path={PROJECT_URL}>
                   <Projects></Projects>
                 </Route>
@@ -67,14 +74,17 @@ class App extends React.Component {
                 <Route path={WATCHTIME_URL}>
                   <Watchtime></Watchtime>
                 </Route>
-                <Route path="/" render={()=> <Redirect to={PROJECT_URL}/>}>
+                <Route path={SHOTS_DETAILS_URL}>
+                  <Shotpage></Shotpage>
+                </Route>
+                <Route path="/" render={()=> <Redirect to={HOME_URL}/>}>
                 </Route>
               </Switch>
             </main>
           </section>
-          <footer className="bottom-bar-container">
+          {/* <footer className="bottom-bar-container">
             <BottomBar />
-          </footer>
+          </footer> */}
         </div>
       </Router>
     );

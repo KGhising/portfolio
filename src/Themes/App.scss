@@ -14,6 +14,8 @@
 @import 'About';
 @import 'ProjectDetails';
 @import 'Blog';
+@import 'Home';
+@import 'ShotPage';
 
 * {
     margin: 0;
@@ -54,7 +56,7 @@ html, body {
         width: 100%;
         margin: auto;
         min-height: 80vh;
-        margin-top: 10rem;
+        margin-top: 5rem;
         margin-bottom: 2rem;
     }
 

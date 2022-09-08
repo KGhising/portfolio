@@ -10,7 +10,7 @@ const ProjectDetails = () =>   {
   const history = useHistory();
 
   function handleClick() {
-    history.push("/projects");
+    history.push("/home");
   }
 
   const imageArray = mirasImages;

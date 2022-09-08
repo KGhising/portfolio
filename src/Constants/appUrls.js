@@ -1,9 +1,11 @@
+export const HOME_URL = '/home';
 export const PROJECT_URL = '/projects';
 export const ABOUT_URL = '/about';
 export const CONTACT_URL = '/contact';
 export const BLOG_URL = '/blogs';
-export const CHASMAGHAR_URL = '/projects/chasmaghar';
-export const MIRASACADEMY_URL = '/projects/mirasacademy';
-export const PIONEER_URL = '/projects/pioneer';
-export const WWF_URL = '/projects/wwf';
-export const WATCHTIME_URL = '/projects/watchtime';
+export const CHASMAGHAR_URL = '/chasmaghar';
+export const MIRASACADEMY_URL = '/mirasacademy';
+export const PIONEER_URL = '/pioneer';
+export const WWF_URL = '/wwf';
+export const WATCHTIME_URL = '/watchtime';
+export const SHOTS_DETAILS_URL = '/shotdetails';

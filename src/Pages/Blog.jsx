@@ -19,7 +19,6 @@ const Blog = () =>   {
     axios.get(mediumURL)
     .then(info => {
       const blogs = info.data.items;
-
       setBlog({item: blogs, isLoading: false });
     })
     .catch(error => setBlog({ error: error.message }));
@@ -31,10 +30,10 @@ const Blog = () =>   {
       <div key={index} className="blog-container">
         <img src={blog.thumbnail} alt={blog.title} />
         <div className="sub-info">
-          <label>{blog.author}</label><span className='seperator'></span>
+          {/* <label>{blog.author}</label><span className='seperator'></span> */}
           <span className='publish-date'>{blog.pubDate.substring(0, 10)}</span>
         </div>
-        <h4 className='blog-title'>{blog.title}</h4>
+        <h5 className='blog-title'>{blog.title}</h5>
         <p className='blog-description body2'>{`${ToText(blog.description)}...`}</p>
         <a className='blog-link' href={blog.link} target="_blank">Read more</a>
       </div>

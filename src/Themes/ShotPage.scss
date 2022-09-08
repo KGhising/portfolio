@@ -1,0 +1,63 @@
+.shot-page {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    .close-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 2rem;
+        position: fixed;
+        backdrop-filter: blur(0.2rem);
+
+        h4 {
+            color: map-get($map: $theme-colors, $key: 'white');
+        }
+
+        .back-button {
+            display: flex;
+            width: min-content;
+            column-gap: 0.5rem;
+            align-items: center;
+            text-decoration: none;
+            background-color: map-get($map: $theme-colors, $key: 'blue-200');
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+    
+    
+            label, .left-icon {
+                color: map-get($map: $theme-colors, $key: 'blue-100');
+            }
+    
+            &:hover {
+                label, .left-icon {
+                    cursor: pointer;
+                    color: map-get($map: $theme-colors, $key: 'blue');
+                }
+            }
+            &:focus {
+                cursor: progress;
+                outline: 2px dashed map-get($map: $theme-colors, $key: 'black');
+                outline-offset: 0.5rem;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .close-container {
+        padding: 0.5rem 1rem !important;
+    }
+    .back-button label {
+        display: none;
+    }
+}

@@ -1,16 +1,22 @@
 .social-media-links {
     display: flex;
-    column-gap: 16px;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 .social-media-links > * {
     color: map-get($map: $theme-colors, $key: 'grey');
+    text-decoration: none;
+    border-radius: 0.125rem;
 
     &:hover {
         color: map-get($map: $theme-colors, $key: 'blue');
     }
 
     &:focus {
+        cursor: progress;
         outline:2px dashed map-get($map: $theme-colors, $key: 'black');
         outline-offset: 0.25rem;
     }

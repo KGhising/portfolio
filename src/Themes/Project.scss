@@ -1,15 +1,16 @@
 .projects {
     width: 100%;
-    max-width: 75rem;
+    max-width: 64rem;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 @media screen and (max-width: $screen-md) {
     .projects {
-        width: 90%;
+        width: 100%;
     }
 }
 
