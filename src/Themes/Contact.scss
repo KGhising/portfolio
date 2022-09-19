@@ -1,7 +1,8 @@
 .contact-form-section {
     width: 100%;
-    margin: auto;
+    margin: 6rem auto;
     max-width: 32rem;
+    color: map-get($map: $theme-colors, $key: 'black');
 
     .form {
         display: flex;

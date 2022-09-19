@@ -11,9 +11,11 @@
 
         .kishor-image {
             width: 20rem;
+            filter: grayscale(100%);
         }
 
         .about-me {
+            color: map-get($map: $theme-colors, $key: 'black');
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
@@ -22,6 +24,7 @@
 
     .shots-container {
         margin-top: 6rem;
+        color: map-get($map: $theme-colors, $key: 'black');
 
         .shots::-webkit-scrollbar { 
             display: none;
@@ -48,6 +51,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 padding: 1rem;
+                border-radius: 0.25rem;
                 display: flex;
                 align-items: flex-end;
                 overflow: hidden;
@@ -86,14 +90,17 @@
 
     .project-container {
         margin-top: 6rem;
+        color: map-get($map: $theme-colors, $key: 'black');
     }
 
     .blogs-container {
         margin-top: 6rem;
+        color: map-get($map: $theme-colors, $key: 'black');
     }
 
     .about-container {
         margin-top: 6rem;
+        color: map-get($map: $theme-colors, $key: 'black');
         .text-container {
             margin-top: 1.5rem;
         }
@@ -101,6 +108,7 @@
 
     .contact-container {
         margin-top: 6rem;
+        color: map-get($map: $theme-colors, $key: 'black');
         
         p {
             margin-top: 1.5rem;

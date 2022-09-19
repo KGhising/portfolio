@@ -23,14 +23,14 @@ class Project extends React.Component {
     const shotsArray = shots;
     const shotsContainer = shotsArray.map((shot, index) => {
       return (
-        <ShotCard shot = {shot} />
+        <ShotCard shot={shot} />
       )
     });
 
     return (
         <div className="home">
             <div className='about-hero'>
-                <img className='kishor-image' src={aboutMe.Image} alt="Portait photo of kishor ghising" />
+                  <abbr title="Kishor Ghising"><img className='kishor-image' src={aboutMe.Image} alt="Portait photo of kishor ghising" /></abbr>
                 <div className="about-me">
                     <h3>{aboutMe.heading}</h3>
                     <h4>{aboutMe.subHeading}</h4>
@@ -49,14 +49,6 @@ class Project extends React.Component {
                 <h4>Blogs.</h4>
                 <Blog />
             </div>
-            {/* <div className="about-container">
-                <h4>About.</h4>
-                <div className="text-container">
-                  <p className="body2">{aboutMe.moreDescription1}</p><br />
-                  <p className="body2">{aboutMe.moreDescription2}</p><br />
-                  <p className="body2">{aboutMe.moreDescription3}</p>
-                </div>
-            </div> */}
             <footer className="contact-container">
                 <h4>Contact.</h4>
                 <SocialLink />
