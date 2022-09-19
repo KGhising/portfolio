@@ -32,7 +32,6 @@ class Project extends React.Component {
             <div className='about-hero'>
                 <img className='kishor-image' src={aboutMe.Image} alt="Portait photo of kishor ghising" />
                 <div className="about-me">
-                    <h3>🖐</h3>
                     <h3>{aboutMe.heading}</h3>
                     <h4>{aboutMe.subHeading}</h4>
                     <p className="body3">{aboutMe.description}</p>
